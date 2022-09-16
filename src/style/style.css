@@ -1,18 +1,38 @@
+:root{
+    --body-background: #DFE8CC;
+    --inputDiv-background : #DAE2B6;
+    --inputTag-background: #DAE2B6;
+    --inputDiv-heading : #7a8063;
+    --CVDiv-background: #F7EDDB;
+}
+
+
+body{
+    background-color: var(--body-background) ;
+}
+
 .app{
-    border: 2px dotted teal;
     display: flex;
     flex-direction: row;
 }
 
 .inputDiv{
-    border:2px dashed goldenrod;
+    border:2px solid black;
     width: 40%;
+    background-color: var(--inputDiv-background);
+    padding: 10px;
+}
+.inputDiv h1{
+    color: var(--inputDiv-heading);
+    text-decoration: underline;
 }
 
 .CVdiv{
-    border:2px dashed goldenrod; 
+    border:2px solid black; 
     margin: 10px auto;   
+    padding : 10px;
     width: 45%;
+    background-color: var(--CVDiv-background);
 }
 
 .input-fieldsDiv{
@@ -21,5 +41,13 @@
 
     margin: 20px;
     width: 80%;
-    border: 2px solid red;
+}
+input{
+    background-color: var(--inputTag-background);
+    margin: 2px;
+    border-color: var(--inputDiv-heading);
+}
+
+small{
+    color: gray;
 }
